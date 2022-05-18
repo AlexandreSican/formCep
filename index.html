@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Preencher Formulário</title>
+</head>
+<body>
+    <div class="content">
+        <div class="contentForm">
+            <h1>Preenchimento de Formulário</h1>
+            
+                <div class="form">
+                    <div class="inputForm">
+                        <form method="get" action="."></form>
+                        <label>Nome: </label>
+                        <input type="text" name="name" id="inputName" placeholder="Digite seu nome completo">
+                        <label>E-mail</label>
+                        <input type="text" name="E-mail" id="inputEmail" placeholder="Digite seu e-mail">
+                        <label >CEP</label>
+                        <input type="text" name="cep" id="inputCep" placeholder="Digite seu cep" onblur="pesquisacep(this.value)">
+                        <label>Rua: <input type="text" name="street" id="inputStreet" disabled></label>
+                        <label>Bairro <input type="text" name="sector" id="inputSector"disabled></label>
+                        <label>Cidade <input type="text" name="city" id="inputCity"disabled></label>
+                        <label>Estado <input type="text" name="state" id="inputState"disabled></label>
+                        <label>Número</label>
+                        <input type="text" name="number" id="inputNumber" placeholder="Deixe em Branco se não tiver">
+                        <label>Complemento</label>
+                        <input type="text" name="complement" id="inputComplement" placeholder="Casa/Bloco/Apto">
+                        <div class="formButton">
+                            <button>Enviar</button>
+                        </div>
+                    </form>
+                    </div>
+                    
+                </div>
+            
+        </div>
+        <footer>Criado por <a href="https://www.linkedin.com/in/alexandre-sicchieri-ba7640103/" class="linkRef" target="blank">Alexandre Sicchieri Cancian</a></footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
