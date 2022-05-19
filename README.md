@@ -1,5 +1,5 @@
 # Projeto Formulário com pesquisa de CEP
-Projeto criado sózinho para ampliar o conhecimento em API
+Projeto criado sozinho para ampliar o conhecimento em API
 
 ## :hammer: Funcionalidades do projeto
 
