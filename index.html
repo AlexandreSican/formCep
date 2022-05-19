@@ -9,36 +9,45 @@
 </head>
 <body>
     <div class="content">
-        <div class="contentForm">
+        
             <h1>Preenchimento de Formulário</h1>
-            
                 <div class="form">
-                    <div class="inputForm">
-                        <form method="get" action="."></form>
-                        <label>Nome: </label>
-                        <input type="text" name="name" id="inputName" placeholder="Digite seu nome completo">
-                        <label>E-mail</label>
-                        <input type="text" name="E-mail" id="inputEmail" placeholder="Digite seu e-mail">
-                        <label >CEP</label>
-                        <input type="text" name="cep" id="inputCep" placeholder="Digite seu cep" onblur="pesquisacep(this.value)">
-                        <label>Rua: <input type="text" name="street" id="inputStreet" disabled></label>
-                        <label>Bairro <input type="text" name="sector" id="inputSector"disabled></label>
-                        <label>Cidade <input type="text" name="city" id="inputCity"disabled></label>
-                        <label>Estado <input type="text" name="state" id="inputState"disabled></label>
-                        <label>Número</label>
-                        <input type="text" name="number" id="inputNumber" placeholder="Deixe em Branco se não tiver">
-                        <label>Complemento</label>
-                        <input type="text" name="complement" id="inputComplement" placeholder="Casa/Bloco/Apto">
+                    <form method="get" action="."></form>
+                        <label>Nome * <input type="text" name="name" id="inputName" placeholder="Digite seu nome completo" required></label>
+                        
+                        <label>E-mail * <input type="email" name="E-mail" id="inputEmail" placeholder="Digite seu e-mail" required></label>
+                        
+                        <label>Sabe seu CEP?
+                            <select name="option" class="inputOption">
+                                <option value="s">Sim</option>
+                                <option value="n" selected>Não</option>
+                                
+                            </select>
+                        </label>
+
+                        <label>CEP <input type="text" name="cep" id="inputCep" placeholder="Digite seu cep" onblur="pesquisacep(this.value)" disabled></label>
+                        
+                        <label>Rua <input type="text" name="street" id="inputStreet"  required ></label>
+
+                        <label>Bairro <input type="text" name="sector" id="inputSector" required value=""></label>
+
+                        <label>Cidade <input type="text" name="city" id="inputCity" required value=""></label>
+
+                        <label>Estado <input type="text" name="state" id="inputState" required value=""></label>
+
+                        <label>Número <input type="text" name="number" id="inputNumber" placeholder="Deixe em Branco se não tiver" required></label>
+                        
+                        <label>Complemento <input type="text" name="complement" id="inputComplement" placeholder="Casa/Bloco/Apto"></label>
+                        <div class="errorWarning"></div>
                         <div class="formButton">
                             <button>Enviar</button>
                         </div>
                     </form>
-                    </div>
-                    
                 </div>
+                
             
-        </div>
-        <footer>Criado por <a href="https://www.linkedin.com/in/alexandre-sicchieri-ba7640103/" class="linkRef" target="blank">Alexandre Sicchieri Cancian</a></footer>
+        
+            <footer>Criado por <a href="https://www.linkedin.com/in/alexandre-sicchieri-ba7640103/" class="linkRef" target="blank">Alexandre Sicchieri Cancian</a></footer>
     </div>
     <script src="script.js"></script>
 </body>
