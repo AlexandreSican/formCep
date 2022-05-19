@@ -135,9 +135,12 @@ c('.formButton button').addEventListener('click', (event)=>{
             }
 
         }
+
         
         //Print no console o json
         console.log(jsonForm);
+
+        limpa_formulário_todo();
 
     }else{ //Caso contrário o usuário será avisado que há algum campo sem valor
         c('.errorWarning').style.display = 'block';
@@ -149,4 +152,18 @@ c('.formButton button').addEventListener('click', (event)=>{
         }, 2000)
     }
 });
+
+function limpa_formulário_todo() {
+    
+    c('#inputName').value = '';
+    c('#inputEmail').value = '';
+    c('#inputCep').value = '';
+    c('#inputStreet').value = '';
+    c('#inputSector').value = '';
+    c('#inputCity').value = '';
+    c('#inputState').value = '';
+    c('#inputNumber').value = '';
+    c('#inputComplement').value = '';
+       
+}
 
