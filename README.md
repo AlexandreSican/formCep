@@ -17,4 +17,4 @@ adicionar e remover elemento pelo JavaScript
 
 Consultas em API de CEP: <a href="https://viacep.com.br" target="blank">Viacep</a>
 
-Acesse em: https://alexandresican.github.io/formCep/
+Acesse em: <a href="https://alexandresican.github.io/formcep/" target="blank">Aqui</a>
